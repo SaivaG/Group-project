@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="block">
+                <div class="block_1">
+                    <h4>Выберите способ оплаты</h4>
+                    <div class="logos">
+                        <input type="radio" id="radio2" name="color">
+                        <label for="radio2">
+                            <div class="logo"><img src="picture/m.png" width="100px" height="auto"></div>
+                        </label><br>
+                        <input type="radio" id="radio2" name="color">
+                        <label for="radio2">
+                            <div class="logo"><img src="picture/v.png" width="100px" height="auto"></div>
+                        </label><br>
+                        <input type="radio" id="radio1" name="color">
+                        <label for="radio1">
+                            <div class="logo"><img src="picture/mo.png" width="100px" height="auto"></div>
+                        </label><br>
+                        <input type="radio" id="radio2" name="color">
+                        <label for="radio2">
+                            <div class="logo"><img src="picture/el.jpg" width="130px" height="auto"></div>
+                        </label><br>
+                    </div>
+                </div>
+                <div class="block_2">
+                    <h4>Данные пользователя</h4>
+                    <input type="text" id="surname" required placeholder="Имя на карте">
+                    <form name=forma>
+                        <input type=text name=mytext id="card" maxlength="19" placeholder="Введите номер карты">
+                    </form>
+                    <input type="date" id="date">
+                    <input type="phone" id="cvc" placeholder="CVC/CVV" maxlength="3"><br>
+                    <input type="checkbox" id="chek">
+                    <p class="kar">Запомнить карту</p>
+                    <p class="text">
+                        <br><br><br>
+                        <small>Безопасность передоваемой информации обеспечивается с помощью современного
+                            <br>протокола обеспечения безопасности в сети интрнет TLS.
+                            Данные защищены по<br>международному стандарту PCI DSS. Генеральная лицензия банка
+                            Кыргызстана №354.</small></p>
+                    <div class="logos">
+                        <div class="grey"><img src="picture/p.png" width="60px" height="30px"></div>
+                        <div class="grey"><img src="picture/mas.png" width="60px" height="30px"></div>
+                        <div class="grey"><img src="picture/vi.png" width="60px" height="30px"></div>
+                    </div><br><br><br><br><br>
+                    <button type="submit" id="btn">Оплатить</button>
+                    <div class="modal">
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <span class="closeBtn">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <p>Оплата успешно произведена. Поздравляем!</p>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

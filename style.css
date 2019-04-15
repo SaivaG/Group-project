@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.block { 
+	width: 1000px;
+	height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+
+.block_1 {
+    width: 450px;
+    margin: 40px;
+}
+.block_2 {
+    width: 450px;
+    margin: 45px;
+}
+#card {
+    margin-top: 10px;
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#date {
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#cvc {
+    margin-top: 10px;
+    width: 40%;
+    padding: 12px 18px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.logo {
+    margin-top: 10px;
+    padding: 15px;
+    justify-content: flex-start;
+}
+#chek {
+    margin-top: 12px;
+    float: left;
+    position: relative;
+}
+.kar {
+    float: left;
+    font-size: 12px;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+.text {
+    color: gray;
+    font-size: 12px;
+}
+.grey {
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 20px;
+    float: left;
+}
+#surname {
+    margin-top: 30px;
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#btn {
+    width: 300px;
+    margin-top: 5px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #95294D;
+    /* color: white; */
+    font-size: inherit;
+    font-weight: normal;
+    padding: 15px 30px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.closeBtn{
+  cursor: pointer;
+  float: right;
+  font-size:20px;
+  color: white;
+}
+
+.modal {
+    background: rgba(0,0,0, 0.2);
+    display: none;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    perspective: 500px;
+    
+}
+
+.modal .modal-wrapper {
+    width: 50%;
+    max-width: 500px;
+    top: 15%;
+    background: #95294D;
+    position: absolute;
+    text-align: left;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.4);
+    animation-name:modalopen;
+    animation-duration:.8s;
+    transform: rotateX(0deg);
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 5px 15px;
+}
+
+.modal-header, .modal-footer {
+    text-align: center;
+    color: white;
+}
+
+.modal-body {
+    background: white;
+}
+
+@keyframes modalopen{
+  from {
+    opacity: 0; 
+    top: 5%;
+    transform: rotateX(15deg);
+   }
+  to {
+    opacity: 1; 
+    top: 15%; 
+    transform: rotateX(0deg);
+    }
+}
